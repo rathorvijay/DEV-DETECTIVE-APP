@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --lm-bg: #f6f8ff;
+    /* --lm-bg-content: #fefefe; */
+    --textcolor:black;
+    --inputnav:#fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    --tag:blue;
+    /* Btn */
+    --placeholder:black;
+    --inputcolor:white;
+    --icon:black;
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lm-bg);
+}
+.container{
+    width: 50%;
+    /* background-color: rgb(225, 231, 236); */
+}
+.header{
+    margin:25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.header h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    color:var(--lm-text);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header .dark{
+   display: flex; 
+   text-align: center;
+}
+.header h{
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color:var(--lm-text-alt)
+}
+.header .icon{
+    font-size: 20px;
+    color:var(--icon);
+    cursor: pointer;
+}
+
+.inputform{
+    width: 100%;
+    height: 7%;
+    border-radius: 10px;
+    box-shadow: var(--lm-shadow) 0px 7px 29px 0px;
+    background-color: var(--inputnav);
+    display: flex;
+    justify-content: space-between;
+} 
+.inputform .iconinput{
+    display: flex;
+}
+.inputform .iconinput i{
+    margin:auto 10px;
+    color:var(--tag);
+}
+.inputform .iconinput input{
+    width: 500px;
+    height: 100%;
+    background-color:var(--inputcolor);
+    color:var(--textcolor);
+}
+input::placeholder{
+   color:var(--placeholder);
+}
+.inputform .buttons{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.inputform input{
+   width: 300px;
+   height: 30px;
+   outline: none;
+   border: none;
+}
+.inputform .buttons .search{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:var(--btn);
+    border:none;
+    margin:2px 10px;
+    color:white;
+}
+.inputform .buttons .search:hover{
+    background-color: var(--btn-hover);
+}
+.inputform .buttons .reset{
+    border: none;
+    background-color: var(--inputnav);
+}
+.inputform .buttons i{
+    margin: auto 0px;
+    cursor: pointer;
+    color:red;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    background-color: var(--lm-bg-content);
+}
+.userprofile{
+   width: 100%;
+   height: 500px;
+   padding: 20px;
+   display: flex;
+   margin-top: 30px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   background-color: var(--lm-bg-content);
+}
+.profileimage{
+   width: 20%;
+   margin: 20px 10px;
+}
+.profileimage img{
+    border-radius: 50%;
+    margin: 0px auto;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.datarender{
+    width: 80%;
+    /* background-color: antiquewhite; */
+    padding: 10px;
+}
+.profilename{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0px;
+    color:var(--textcolor);
+}
+.datarender a{
+ font-size: 20px;
+ text-decoration: none;
+ color:var(--tag);
+}
+
+.datarender .bio{
+    margin-top: 10px;
+    width: 80%;
+    color:var(--textcolor);
+}
+.card{
+    display: flex;
+    margin: 20px 0px;
+    width: 100%;
+    gap:10px;
+}
+.firstcard,.secondcard,.thirdcard{
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    background-color: rgb(226, 226, 232);
+}
+.links h1{
+    font-size: 20px;
+    color:red;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.links .firstrow{
+    gap:20px;
+    display: flex;
+    margin-bottom:30px;
+}
+i{
+    color:var(--textcolor);
+}
+.links .secondrow{
+    gap:20px;
+    display: flex;
+}
+@media  {
+    
+}
+
